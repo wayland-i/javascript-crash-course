@@ -1,8 +1,7 @@
-const num = 10;
+let num = 10.8;
 
-console.log(num);
+let strNum = '10.8px'
 
-num = 20;
+console.log(Number(strNum))
 
-console.log(num)
-
+console.log(parseFloat(strNum))
