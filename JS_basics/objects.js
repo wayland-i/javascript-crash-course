@@ -165,3 +165,20 @@ new lines
 
 // console.count();
 
+// console.time('key');
+// for(let i = 0; i < 10000; i++) {}
+// console.timeEnd('key');
+
+// console.time()
+// for(let i = 0; i < 10000; i++) {}
+// console.timeEnd();
+
+
+// console.trace();
+
+// function foo() {
+//     console.trace()
+// }
+
+// foo();
+
