@@ -182,3 +182,16 @@ new lines
 
 // foo();
 
+// 'use strict';
+
+// x = 5;
+
+
+function foo() {
+    'use strict';
+    x = 5;
+}
+
+y = 10;
+
+foo();
