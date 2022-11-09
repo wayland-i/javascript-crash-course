@@ -123,4 +123,15 @@
 
 // throw new Error('Oh No');
 
-throw Error
+// throw 'Oh No';
+
+// throw new Error('Oh No');
+
+try {
+    throw new Error('Oh No');
+} catch (error) {
+    console.log(error);
+}
+
+console.log('Here');
+
