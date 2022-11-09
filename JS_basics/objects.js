@@ -127,11 +127,41 @@
 
 // throw new Error('Oh No');
 
-try {
-    throw new Error('Oh No');
-} catch (error) {
-    console.log(error);
-}
+// try {
+//     throw new Error('Oh No');
+// } catch (error) {
+//     console.log(error);
+// }
 
-console.log('Here');
+// console.log('Here');
+
+
+//Single line comment
+
+/* Multi line
+comment
+new lines
+*/
+
+// console.log('value');
+
+// console.error('error message');
+
+// console.debug('Debug message');
+
+// console.table([[1, 2], ['hello', 'world']]);
+
+// console.count();
+
+// console.count();
+
+// console.countReset();
+
+// console.count();
+
+// console.count('key');
+
+// console.count('key');
+
+// console.count();
 
