@@ -78,6 +78,12 @@
 // for (const value of arr) {
 //     console.log('value:', value, 'index:', i);
 //     i++;
-    
 // }
+
+
+const arr = [1, 2, 3];
+
+arr.forEach(function(value, index) {
+    console.log(value, index, this);
+}, {num : 10});
 
