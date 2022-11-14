@@ -81,9 +81,28 @@
 // }
 
 
+// const arr = [1, 2, 3];
+
+// arr.forEach(function(value, index) {
+//     console.log(value, index, this);
+// }, {num : 10});
+
+// const mappedArray = arr.map(function(value, index) {
+//     return value + index + this.num;
+// }, {num : 10});
+
+// console.log(mappedArray)
+
+
 const arr = [1, 2, 3];
 
-arr.forEach(function(value, index) {
-    console.log(value, index, this);
-}, {num : 10});
+// const mappedArray = arr.filter(function(value) {
+//     return value > this.num;
+// }, {num : 1});
+
+const foundValue = arr.find(function(value) {
+    return value > 1;
+}) 
+
+console.log(foundValue)
 
