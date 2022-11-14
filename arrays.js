@@ -48,4 +48,13 @@
 
 const arr = [1, 2, 3];
 
-arr.splice();
+// arr.splice(0, 1);
+// arr.splice(0, 2, 'hello', 'world');
+
+// const newArr = arr.slice(1, 3);
+
+// console.log(newArr);
+
+// const newArr = arr.concat(['hello', 'world']);
+
+console.log(newArr)
