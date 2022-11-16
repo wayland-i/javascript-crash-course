@@ -155,10 +155,21 @@ const obj = {
 //     console.log(value);
 // });
 
-for (key in obj) {
-    console.log(key);
-};
+// for (key in obj) {
+//     console.log(key);
+// };
 
 const myObj = {
-    
-}
+    original: 123,
+};
+
+Object.assign(myObj, obj);
+
+console.log(myObj);
+
+// Object.freeze(website);
+Object.seal(website);
+website.name = 'FrontendExpert';
+website.foo = 'bar';
+console.log(Object.isFrozen(website));
+console.log(website);
