@@ -133,17 +133,17 @@
 // website.setRating = 6;
 // console.log(website.getRating);
 
-const website = {
-    name: 'AlgoExpert',
-    rating: 5,
-    founders: ['Clement', 'Antoine'],
-};
+// const website = {
+//     name: 'AlgoExpert',
+//     rating: 5,
+//     founders: ['Clement', 'Antoine'],
+// };
 
-const obj = {
-    foo: 'bar',
-    [Symbol('id')]: 0,
-    __proto__: website
-};
+// const obj = {
+//     foo: 'bar',
+//     [Symbol('id')]: 0,
+//     __proto__: website
+// };
 
 // console.log(obj);
 
@@ -159,17 +159,50 @@ const obj = {
 //     console.log(key);
 // };
 
-const myObj = {
-    original: 123,
+// const myObj = {
+//     original: 123,
+// };
+
+// Object.assign(myObj, obj);
+
+// console.log(myObj);
+
+// // Object.freeze(website);
+// Object.seal(website);
+// website.name = 'FrontendExpert';
+// website.foo = 'bar';
+// console.log(Object.isFrozen(website));
+// console.log(website);
+
+const website = {
+    name: 'AlgoExpert',
+    rating: 5,
+    founders: ['Clement', 'Antoine'],
+    [Symbol.toPrimitive](hint) {
+        if (hint === 'number') {
+            return 5;
+        } else if (hint === 'string') {
+            return 'hello';
+        }
+        return 2;
+    }
 };
 
-Object.assign(myObj, obj);
+// console.log(website.toString());
+// website.toString = function() {
+//     return 'Hello world';
+// };
+// console.log(website.toString());
 
-console.log(myObj);
+console.log(website.valueOf());
+website.valueOf = function() {
+    return 2;
+};
 
-// Object.freeze(website);
-Object.seal(website);
-website.name = 'FrontendExpert';
-website.foo = 'bar';
-console.log(Object.isFrozen(website));
-console.log(website);
+
+console.log(website - 1);
+
+console.log(Number(website));
+
+console.log(10 - website);
+console.log(10 + website);
