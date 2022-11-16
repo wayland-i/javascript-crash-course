@@ -37,10 +37,32 @@
 // delete website.foo;
 // console.log(website);
 
-const website = {
-    name: 'AlgoExpert',
-    rating: 5,
-    founders: ['Clement', 'Antoine'],
-};
+// const website = {
+//     name: 'AlgoExpert',
+//     rating: 5,
+//     founders: ['Clement', 'Antoine'],
+// };
 
-console.log()
+// const name = 'Conner';
+// const obj =  {
+//     name,
+// };
+
+
+// console.log(obj);
+
+// const website = {
+//         name: 'AlgoExpert',
+//         rating: 5,
+//         founders: ['Clement', 'Antoine'],
+// };
+    
+// const obj = new Object();
+// obj.name = 'Conner';
+// console.log(obj);
+
+const website = {
+        name: 'AlgoExpert',
+        rating: 5,
+        founders: ['Clement', 'Antoine'],
+};
