@@ -111,24 +111,54 @@
 // console.log(website.hasOwnProperty('name'));
 // console.log(website.name !== undefined);
 
+// const website = {
+//     name: undefined,
+//     rating: 5,
+//     founders: ['Clement', 'Antoine'],
+//     // sayHello: () => console.log('hello')
+//     // sayHello: function() {console.log('hello')}
+//     sayHello() {
+//         console.log('hello');
+//     },
+//     get getRating() {
+//         return this.rating * 2;
+//     },
+//     set setRating(value) {
+//         this.rating = value;
+//     }
+// };
+
+// website.sayHello();
+// console.log(website.getRating);
+// website.setRating = 6;
+// console.log(website.getRating);
+
 const website = {
-    name: undefined,
+    name: 'AlgoExpert',
     rating: 5,
     founders: ['Clement', 'Antoine'],
-    // sayHello: () => console.log('hello')
-    // sayHello: function() {console.log('hello')}
-    sayHello() {
-        console.log('hello');
-    },
-    get getRating() {
-        return this.rating * 2;
-    },
-    set setRating(value) {
-        this.rating = value;
-    }
 };
 
-website.sayHello();
-console.log(website.getRating);
-website.setRating = 6;
-console.log(website.getRating);
+const obj = {
+    foo: 'bar',
+    [Symbol('id')]: 0,
+    __proto__: website
+};
+
+// console.log(obj);
+
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+// console.log(Object.entries(obj))
+
+// Object.entries(obj).forEach(function(value) {
+//     console.log(value);
+// });
+
+for (key in obj) {
+    console.log(key);
+};
+
+const myObj = {
+    
+}
