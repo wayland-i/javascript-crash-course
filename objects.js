@@ -101,9 +101,18 @@
 
 // console.log(obj)
 
+// const website = {
+//     name: undefined,
+//     rating: 5,
+//     founders: ['Clement', 'Antoine'],
+// };
+
+// console.log('name' in website);
+// console.log(website.hasOwnProperty('name'));
+// console.log(website.name !== undefined);
+
 const website = {
-    name: 'AlgoExpert',
+    name: undefined,
     rating: 5,
     founders: ['Clement', 'Antoine'],
 };
-
