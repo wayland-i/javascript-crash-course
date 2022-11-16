@@ -61,8 +61,23 @@
 // obj.name = 'Conner';
 // console.log(obj);
 
+// const website = {
+//         name: 'AlgoExpert',
+//         rating: 5,
+//         founders: ['Clement', 'Antoine'],
+// };
+
+// function Website(name, rating, founders) {
+//     this.name = name;
+//     this.rating = rating;
+//     this.founders = founders;
+// };
+
+// const FrontendExpert = new Website('FrontendExpert', 5, ['Conner']);
+// console.log(FrontendExpert);
+
 const website = {
-        name: 'AlgoExpert',
-        rating: 5,
-        founders: ['Clement', 'Antoine'],
+    name: 'AlgoExpert',
+    rating: 5,
+    founders: ['Clement', 'Antoine'],
 };
