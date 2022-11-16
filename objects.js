@@ -76,8 +76,34 @@
 // const FrontendExpert = new Website('FrontendExpert', 5, ['Conner']);
 // console.log(FrontendExpert);
 
+// const website = {
+//     name: 'AlgoExpert',
+//     rating: 5,
+//     founders: ['Clement', 'Antoine'],
+// };
+
+// const id = Symbol('id');
+// const id2 = Symbol('id2');
+// const id3 = Symbol.for('id3');
+// const id4 = Symbol.for('id3');
+
+// console.log(id3 === id4);
+
+
+// console.log(id == id2)
+
+// const obj = {
+//     [id]: 1234,
+//     [id2]: 0,
+//     id: 'hello',
+//     id: 'world'
+// };
+
+// console.log(obj)
+
 const website = {
     name: 'AlgoExpert',
     rating: 5,
     founders: ['Clement', 'Antoine'],
 };
+
