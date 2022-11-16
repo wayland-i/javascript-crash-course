@@ -109,11 +109,31 @@
 
 // .every, .some also work as you would assume
 
-const arr = [1, 2, 3];
+// const arr = [1, 2, 3];
 
-const sum = arr.reduce(function(accumulator, currValue) {
-    return accumulator + currValue;
-}, 0);
+// const sum = arr.reduce(function(accumulator, currValue) {
+//     return accumulator + currValue;
+// }, 0);
+
+// console.log(arr);
+// console.log(sum);
+
+
+const arr = [5, 7, 3, 0];
+
+arr.sort(compareNumbers);
+
+function compareNumbers(firstNumber, secondNumber) {
+    // return secondNumber - firstNumber;    
+    if (firstNumber === 3) {
+        return -1;
+    }
+    if (secondNumber === 3) {
+        return 1;
+    }
+    return firstNumber - secondNumber;
+}
+
+
 
 console.log(arr);
-console.log(sum);
