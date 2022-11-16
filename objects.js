@@ -115,4 +115,20 @@ const website = {
     name: undefined,
     rating: 5,
     founders: ['Clement', 'Antoine'],
+    // sayHello: () => console.log('hello')
+    // sayHello: function() {console.log('hello')}
+    sayHello() {
+        console.log('hello');
+    },
+    get getRating() {
+        return this.rating * 2;
+    },
+    set setRating(value) {
+        this.rating = value;
+    }
 };
+
+website.sayHello();
+console.log(website.getRating);
+website.setRating = 6;
+console.log(website.getRating);
