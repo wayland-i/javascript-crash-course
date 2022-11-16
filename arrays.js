@@ -94,15 +94,19 @@
 // console.log(mappedArray)
 
 
-const arr = [1, 2, 3];
+// const arr = [1, 2, 3];
 
 // const mappedArray = arr.filter(function(value) {
 //     return value > this.num;
 // }, {num : 1});
 
-const foundValue = arr.find(function(value) {
-    return value > 1;
-}) 
+// const foundValue = arr.find(function(value) {
+//     return value > 1;
+// }) 
 
-console.log(foundValue)
+// console.log(foundValue)
 
+
+// .every, .some also work as you would assume
+
+const arr = [1, 2, 3];
