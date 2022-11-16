@@ -110,3 +110,10 @@
 // .every, .some also work as you would assume
 
 const arr = [1, 2, 3];
+
+const sum = arr.reduce(function(accumulator, currValue) {
+    return accumulator + currValue;
+}, 0);
+
+console.log(arr);
+console.log(sum);
