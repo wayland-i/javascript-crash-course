@@ -29,3 +29,22 @@
 
 const listItems = document.querySelectorAll('li');
 
+const scrollable = document.getElementById('scrollable');
+
+console.log(scrollable.clientHeight);
+console.log(scrollable.offsetHeight);
+console.log(scrollable.scrollHeight);
+console.log(scrollable.offsetTop);
+
+console.log(window.getComputedStyle(listItems[0]).fontSize);
+
+// console.log(listItems[0].style.fontSize);
+
+console.log(scrollable.querySelectorAll('p')[0].offsetTop);
+
+scrollable.querySelectorAll('p')[6].scrollIntoView();
+
+scrollable.scrollTo({
+    top: scrollable.querySelectorAll('p')[2].offsetTop,
+    behavior: 'smooth'
+});
