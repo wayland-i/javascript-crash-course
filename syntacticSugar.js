@@ -75,10 +75,22 @@
 // console.log(`Hello ${defaultName} ${1 + 3}`);
 
 
-const person = {
-    company: {
-        website: 'AlgoExpert.io'
-    }
-};
+// const person = {
+//     company: {
+//         website: 'AlgoExpert.io'
+//     }
+// };
 
-console.log(person?.company?.website ?? 'Foo');
+// console.log(person?.company?.website ?? 'Foo');
+
+const shouldRunCode = true;
+
+function logWorld() {
+    console.log('Hello World');
+}
+
+// shouldRunCode && logWorld();
+
+if (shouldRunCode) {
+    logWorld();
+}
