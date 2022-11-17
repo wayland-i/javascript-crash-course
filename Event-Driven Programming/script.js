@@ -38,23 +38,33 @@
 //     console.log(e.pageX, e.pageY);
 // });
 
+// const scrollable = document.getElementById('scrollable');
+// const button = document.querySelector('button');
+
+// button.addEventListener('dragstart', e => {
+//     console.log(e);
+// });
+
+// scrollable.addEventListener('drop', e => {
+//     scrollable.prepend(button);
+// });
+
+// scrollable.addEventListener('dragover', e => {
+//     e.preventDefault();
+// })
+
+// button.addEventListener('click', onClick);
+
+// function onClick() {
+//     console.log('hello');
+// };
+
 const scrollable = document.getElementById('scrollable');
 const button = document.querySelector('button');
 
-button.addEventListener('dragstart', e => {
-    console.log(e);
+scrollable.addEventListener('click', e => {
+    console.log(this)
+    if (e.target !== this) {
+        e.target.textContent = 'Clicked'
+    }
 });
-
-scrollable.addEventListener('drop', e => {
-    scrollable.prepend(button);
-});
-
-scrollable.addEventListener('dragover', e => {
-    e.preventDefault();
-})
-
-button.addEventListener('click', onClick);
-
-function onClick() {
-    console.log('hello');
-};
