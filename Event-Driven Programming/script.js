@@ -25,3 +25,36 @@
 //     console.log('You clicked the button');
 // };
 
+// window.addEventListener('keydown', event => {
+//     console.log(event.code);
+// });
+
+// //keyup
+
+// const scrollable = document.getElementById('scrollable');
+
+// scrollable.addEventListener('mousemove', e => {
+//     // console.log(e.target.scrollTop);
+//     console.log(e.pageX, e.pageY);
+// });
+
+const scrollable = document.getElementById('scrollable');
+const button = document.querySelector('button');
+
+button.addEventListener('dragstart', e => {
+    console.log(e);
+});
+
+scrollable.addEventListener('drop', e => {
+    scrollable.prepend(button);
+});
+
+scrollable.addEventListener('dragover', e => {
+    e.preventDefault();
+})
+
+button.addEventListener('click', onClick);
+
+function onClick() {
+    console.log('hello');
+};
