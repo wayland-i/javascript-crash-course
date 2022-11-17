@@ -11,16 +11,21 @@
 // listItems[0].className = 'blue'
 
 
+// const listItems = document.querySelectorAll('li');
+
+// const p = document.createElement('p');
+// p.textContent = 'Hello World';
+
+// document.body.appendChild(p);
+
+// for (let i = 0; i < 3; i++) {
+//     const parent = document.querySelector('ol');
+//     const li = document.createElement('li');
+//     li.textContent = `List item with i=${i}`;
+//     parent.append(li);
+// }
+
+// listItems[0].remove()
+
 const listItems = document.querySelectorAll('li');
 
-const p = document.createElement('p');
-p.textContent = 'Hello World';
-
-document.body.appendChild(p);
-
-for (let i = 0; i < 3; i++) {
-    const parent = document.querySelector('ol');
-    const li = document.createElement('li');
-    li.textContent = `List item with i=${i}`;
-    parent.append(li)
-}
