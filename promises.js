@@ -62,8 +62,38 @@
 //     new Promise((res, rej) => setTimeout(() => res(5), 500))
 // ]).then(console.log);
 
+// async function tester() {
+//     return 3;
+// }
+
+// console.log(tester());
+
+
+// async function tester() {
+//     const value = await new Promise((res, rej) => setTimeout(() => res(3), 1000));
+//     console.log(value);
+// }
+
+// tester();
+
+
+// async function tester() {
+//     try {
+//         const value = await new Promise((res, rej) => {
+//             setTimeout(() => rej(new Error('Something went wrong')), 1000);
+//         });
+//         console.log(value);
+//     } catch (error) {
+//         console.log('Oh No ' + error);
+//     }
+// }
+
+// tester();
+
 async function tester() {
-    return 3;
+    return await new Promise((res, rej) => {
+        setTimeout(() => rej(new Error('Something went wrong')), 1000);
+    });
 }
 
-console.log(tester());
+tester().then(console.log).catch(error => console.log('On No ' + error));
