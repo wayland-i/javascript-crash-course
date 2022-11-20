@@ -10,18 +10,17 @@ const BROKEN_API = 'http://localhost:3000/broken';
 //     .then(console.log)
 //     .catch(error => console.error('Oh No ' + error));
 
-async function main() {
-    try {
-        const response = await fetch(BASE_API);
-        console.log(response.status);
-        console.log(response.ok)
-        const text = await response.text();
-        console.log(text);
-    } catch (error) {
-        console.log('Oh No: ' + error)
-    }
-}
+// async function main() {
+//     try {
+//         const response = await fetch(BASE_API);
+//         console.log(response.status);
+//         console.log(response.ok)
+//         const text = await response.text();
+//         console.log(text);
+//     } catch (error) {
+//         console.log('Oh No: ' + error)
+//     }
+// }
+// main();
 
-
-main()
-
+fetch(JSON_API).then(res => res.json()).then(console.log)
