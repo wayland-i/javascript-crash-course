@@ -23,4 +23,26 @@ const BROKEN_API = 'http://localhost:3000/broken';
 // }
 // main();
 
-fetch(JSON_API).then(res => res.json()).then(console.log)
+// fetch(JSON_API)
+//     .then(res => res.json())
+//     .then(console.log)
+
+// const data = {
+//     name: 'Ian'
+// }
+
+const form = document.querySelector('form');
+form.addEventListener('submit', onSubmit);
+
+async function onSubmit(event) {
+    event.preventDefault();
+    fetch(POST_API, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(console.log)
+}
