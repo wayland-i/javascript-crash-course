@@ -50,7 +50,26 @@
 
 // 'use strict';
 
-[1, 2, 3].forEach(function(num) {
-    console.log(this);
-    console.log(num);
-}, { num: 10});
+// [1, 2, 3].forEach(function(num) {
+//     console.log(this);
+//     console.log(num);
+// }, { num: 10});
+
+'use strict';
+
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak() {
+        console.log('Hello I am ' + this.name);
+    }
+}
+
+
+const ian = new Person('Ian');
+const clement = new Person('Clement');
+ian.speak();
+clement.speak();
+
