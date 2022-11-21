@@ -96,3 +96,15 @@ class Person {
     }
 }
 
+class Child extends Person {
+    constructor(name, age) {
+        super(name);
+        this.age = age;
+    }
+}
+
+const child = new Child('John', 10);
+child.speak();
+console.log(child instanceof Person);
+console.log(child.age);
+
