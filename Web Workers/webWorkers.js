@@ -6,6 +6,12 @@ sayHelloButton.addEventListener('click', sayHello);
 
 function slowOperation() {
     const worker = new Worker('worker.js');
+    worker.postMessage(10);
+
+    worker.addEventListener('message', event => {
+        console.log(event.data);
+    });
+
 }
 
 function sayHello() {
