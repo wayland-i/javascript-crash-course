@@ -1,7 +1,7 @@
 
 
 
-(function myModule() {
+(function() {
     frontendExpert();
 
     const conner = new Person('Conner');
