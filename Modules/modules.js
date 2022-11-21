@@ -1,7 +1,15 @@
-import * as helpers from './helpers.js';
-import * as person from './Person.js';
+import algoExpert, { frontendExpert } from './helpers.js';
+import Person from './Person.js';
 
-helpers.frontendExpert();
+frontendExpert();
+algoExpert();
 
-const conner = new person.Person('Conner');
+const conner = new Person('Conner');
 conner.sayHello();
+
+// const shouldSayFrontend = true;
+
+// if (shouldSayFrontend) {
+//     const importedObj = await import('/.helpers.js')
+//     importedObj.frontendExpert();
+// }
