@@ -24,19 +24,15 @@
 
 const request = indexedDB.open('myDatabase', 1);
 
-request.addEventListener('upgradeneeded', event => {
+request.addEventListener('success', event => {
     const database = event.target.result;
-    const store = database.createObjectStore('users', {keyPath: 'id'});
-    store.createIndex('name', 'name');
+    database
+        .transaction(['users'], 'readwrite')
+        .objectStore('users')
+        .index('name')
+        .get('Conner');
 
-    store.add({
-        id: 0,
-        name: 'Conner',
-        course: 'FrontendExpert'
-    });
-    store.add({
-        id: 1,
-        name: 'Clement',
-        course: 'AlgoExpert'
-    });
+    req.addEventListener('success', event => {
+        console.log(event.target.result.name);
+    })
 })
