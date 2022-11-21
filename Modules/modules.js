@@ -1,13 +1,7 @@
+import * as helpers from './helpers.js';
+import * as person from './Person.js';
 
+helpers.frontendExpert();
 
-
-(function() {
-    frontendExpert();
-
-    const conner = new Person('Conner');
-    conner.sayHello();
-})();
-
-
-
-// myModule();
+const conner = new person.Person('Conner');
+conner.sayHello();
