@@ -65,14 +65,14 @@ interface GetterSetter<Key, Value> {
     get: (key: Key) => Value;
 }
 
-class StringNumGetterSetter implements GetterSetter<string, number> {
-    map: Map<string, number> = new Map();
+// class StringNumGetterSetter implements GetterSetter<string, number> {
+//     map: Map<string, number> = new Map();
 
-    set(key: string, value: number): void {
-        this.map.set(key, value);
-    }
+//     set(key: string, value: number): void {
+//         this.map.set(key, value);
+//     }
 
-    get(key: string): number {
-        return this.map.get(key);
-    }
-}
+//     get(key: string): number {
+//         return this.map.get(key);
+//     }
+// }
