@@ -5,5 +5,5 @@ button.addEventListener('click', moveRight);
 function moveRight() {
     const circle = document.getElementById('circle');
     const { left } = getComputedStyle(circle);
-    circle.style.left = left + 10;
+    circle.style.left = parseInt(left) + 10 + 'px';
 }
